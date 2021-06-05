@@ -1,0 +1,63 @@
+@import "./variables";
+
+.navbar {
+  width: 100vw;
+  height: 4rem;
+  background-color: $color-neutral;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 37px -14px $color-secondary;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .logo {
+    max-width: auto;
+    max-height: 90%;
+  }
+}
+
+.navbar-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    li {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin: 0 2rem;
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      a:hover {
+        color: $color-primary;
+      }
+      .resume-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $color-primary;
+        width: 130px;
+        height: 50px;
+        border-radius: 7px;
+        color: $color-primary;
+      }
+      .resume-btn:hover {
+        background-color: $color-primary-transparent;
+      }
+    }
+  }
+}
