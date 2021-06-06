@@ -1,7 +1,9 @@
+@import "../styles/variables";
+
 #Skills {
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $color-neutral;
 }

@@ -1,7 +1,82 @@
+@import "./variables";
+
 #Home {
   height: 100vh;
-  border: 1px solid black;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 1.5rem;
+}
+
+.content {
+  width: Max(50rem, 50%);
+  margin-left: 1.5vw;
+  line-height: 0;
+  .greeting {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .name {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+  }
+  .intro {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+  .about {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    margin-top: 2rem;
+  }
+  hr {
+    border: 1px solid $color-primary-transparent;
+    width: 80%;
+    margin-right: 20%;
+  }
+  .logo {
+    font-size: 2rem;
+    color: $color-secondary;
+    margin: 1.5rem;
+    margin-left: 0;
+  }
+  .logo:hover {
+    color: $color-primary;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    .greeting {
+      color: $color-secondary;
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .intro {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    .about {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+  }
 }
