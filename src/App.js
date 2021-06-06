@@ -6,9 +6,15 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
+import Particles from "react-tsparticles";
+import ParticleConfig from "./config/particles-config";
+
 const App = () => {
   return (
     <div className="container">
+      <div className="combined-container">
+        <Particles options={ParticleConfig} />
+      </div>
       <Navbar />
       <Home />
       <Skills />
