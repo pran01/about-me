@@ -7,9 +7,9 @@
   padding: 1.5rem;
 }
 
-.content {
+#Home .content {
   width: Max(50rem, 50%);
-  margin-left: 1.5vw;
+  margin-left: 3vw;
   line-height: 0;
   .greeting {
     color: $color-secondary;
@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 750px) {
-  .content {
+  #Home .content {
     .greeting {
       color: $color-secondary;
       font-family: $font-primary;
