@@ -19,7 +19,7 @@ const Skills = () => {
     <section id="Skills">
       <div className="content">
         <p>What I can work with</p>
-        <hr align="left" size="0" />
+        {/* <hr align="left" size="0" /> */}
         <div className="languages">
           <p>Languages</p>
           <div className="language-logos">
