@@ -1,7 +1,7 @@
 @import "../styles/variables";
 
 #Skills {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background-color: $color-neutral;
   padding: 1.5rem;
@@ -9,10 +9,9 @@
 
 #Skills .content {
   width: Max(50rem, 50%);
+  margin: 0;
   margin-left: 3vw;
   margin-top: 4vh;
-  display: flex;
-  flex-direction: column;
   line-height: 0;
   & > p {
     font-family: $font-primary;
@@ -22,8 +21,7 @@
     margin-bottom: 1rem;
   }
   hr {
-    width: 24rem;
-    margin-left: 0.5rem;
+    width: 54%;
     border: 1px solid $color-primary-transparent;
   }
   .languages {
@@ -31,8 +29,14 @@
     & > p {
       color: $color-secondary;
       font-family: $font-primary;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.5rem;
+    }
+    .language-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, MinMax(14rem, 1fr));
+      row-gap: 4rem;
+      margin-top: 3rem;
     }
   }
   .libraries {
@@ -40,11 +44,46 @@
     & > p {
       color: $color-secondary;
       font-family: $font-primary;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.5rem;
+    }
+    .libraries-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, MinMax(14rem, 1fr));
+      row-gap: 4rem;
+      margin-top: 3rem;
     }
   }
   .skill-logo {
     height: 4rem;
+  }
+}
+
+@media (max-width: 530px) {
+  #Skills .content {
+    & > p {
+      font-size: 1.6rem;
+    }
+    hr {
+      width: 18rem;
+    }
+    .languages {
+      & > p {
+        font-size: 1rem;
+      }
+      .language-logos {
+        grid-template-columns: repeat(auto-fit, MinMax(10rem, 1fr));
+        row-gap: 3rem;
+      }
+    }
+    .libraries {
+      & > p {
+        font-size: 1rem;
+      }
+      .libraries-logos {
+        grid-template-columns: repeat(auto-fit, MinMax(10rem, 1fr));
+        row-gap: 3rem;
+      }
+    }
   }
 }

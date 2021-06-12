@@ -22,15 +22,19 @@ const Skills = () => {
         <hr align="left" size="0" />
         <div className="languages">
           <p>Languages</p>
-          {languages.map((item) => (
-            <img src={item} alt={`${item}`} className="skill-logo" />
-          ))}
+          <div className="language-logos">
+            {languages.map((item) => (
+              <img src={item} alt={`${item}`} className="skill-logo" />
+            ))}
+          </div>
         </div>
         <div className="libraries">
           <p>Libraries/Frameworks/Tools</p>
-          {libraries.map((item) => (
-            <img src={item} alt={`${item}`} className="skill-logo" />
-          ))}
+          <div className="libraries-logos">
+            {libraries.map((item) => (
+              <img src={item} alt={`${item}`} className="skill-logo" />
+            ))}
+          </div>
         </div>
       </div>
     </section>
