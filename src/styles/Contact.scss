@@ -7,3 +7,49 @@
   align-items: center;
   background-color: $color-neutral;
 }
+
+#Contact .contact-container {
+  border: 1px solid black;
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    width: 30rem;
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid $color-primary;
+      width: 100%;
+      height: 3rem;
+      margin: 1em;
+      border-radius: 10px;
+      color: $color-secondary;
+      font-size: 1.5rem;
+      padding: 0.6em;
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $color-secondary-transparent;
+        font-size: 1.5rem;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .message {
+      height: 300px;
+      padding-top: 2em;
+    }
+    .send {
+      width: 100%;
+      height: 50px;
+      background: $color-primary-transparent;
+      border: 1px solid $color-primary;
+      width: 100%;
+      height: 3rem;
+      border-radius: 10px;
+      color: $color-secondary;
+      font-size: 1.5rem;
+    }
+  }
+}
