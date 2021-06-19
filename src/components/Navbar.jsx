@@ -1,5 +1,6 @@
 import "../styles/navbar.scss";
 import logo from "../assets/images/PS-Logo-Black.png";
+import resume from "../assets/docs/Resume-November2020.pdf";
 
 const Navbar = () => {
   const toggleNavbar = () => {
@@ -34,7 +35,12 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#Home" type="button" className="resume-btn">
+            <a
+              href={resume}
+              type="button"
+              target="_blank"
+              className="resume-btn"
+              rel="noreferrer">
               Resume
             </a>
           </li>
