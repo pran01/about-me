@@ -3,6 +3,10 @@ import "../styles/Contact.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
+  const sendEmail = () => {
+    console.log("Send");
+    return;
+  };
   return (
     <section id="Contact">
       <div class="contact-container">
@@ -14,9 +18,13 @@ const Contact = () => {
             class="message"
             placeholder="Your Message"
           />
-          <a href="" class="send" type="button">
+          <button onClick={sendEmail} class="send" type="button">
             Send
-          </a>
+          </button>
+          {/*
+          TODO: 
+          Animation for send button
+          */}
         </div>
         <div class="profile-links">
           <a
