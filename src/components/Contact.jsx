@@ -2,31 +2,54 @@ import "../styles/Contact.scss";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+import emailjs from "emailjs-com";
+import apiKey from "../config/emailkey";
+
 const Contact = () => {
-  const sendEmail = () => {
-    console.log("Send");
-    return;
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevents default refresh by the browser
+    emailjs
+      .sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+      .then(
+        (result) => {
+          alert("Message Sent, We will get back to you shortly", result.text);
+        },
+        (error) => {
+          alert("An error occurred, Please try again", error.text);
+        }
+      );
   };
   return (
     <section id="Contact">
-      <div class="contact-container">
-        <div class="contact-form">
-          <input type="text" class="name" placeholder="Name" />
-          <input type="email" class="email" placeholder="Email" />
+      <div className="contact-container">
+        <form className="contact-form" onSubmit={sendEmail}>
+          <input
+            type="text"
+            className="name"
+            placeholder="Name"
+            name="from_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Email"
+            name="from_email"
+          />
           <textarea
             type="textarea"
-            class="message"
+            className="message"
             placeholder="Your Message"
+            name="message"
           />
-          <button onClick={sendEmail} class="send" type="button">
+          <button className="send" type="submit">
             Send
           </button>
           {/*
           TODO: 
           Animation for send button
           */}
-        </div>
-        <div class="profile-links">
+        </form>
+        <div className="profile-links">
           <a
             href="https://www.linkedin.com/in/pranav-sinha/"
             target="_blank"

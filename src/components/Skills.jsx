@@ -23,16 +23,26 @@ const Skills = () => {
         <div className="languages">
           <p>Languages</p>
           <div className="language-logos">
-            {languages.map((item) => (
-              <img src={item} alt={`${item}`} className="skill-logo" />
+            {languages.map((item, index) => (
+              <img
+                src={item}
+                alt={`${item}`}
+                className="skill-logo"
+                key={index}
+              />
             ))}
           </div>
         </div>
         <div className="libraries">
           <p>Libraries/Frameworks/Tools</p>
           <div className="libraries-logos">
-            {libraries.map((item) => (
-              <img src={item} alt={`${item}`} className="skill-logo" />
+            {libraries.map((item, index) => (
+              <img
+                src={item}
+                alt={`${item}`}
+                className="skill-logo"
+                key={index}
+              />
             ))}
           </div>
         </div>
