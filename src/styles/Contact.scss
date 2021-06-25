@@ -10,6 +10,15 @@
 
 #Contact .contact-container {
   padding: 2em;
+  .contact-heading {
+    color: $color-primary;
+    font-size: 2.5rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid $color-primary-transparent;
+    padding: 0.5em;
+  }
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -26,10 +35,12 @@
       color: $color-secondary;
       font-size: 1.5rem;
       padding: 0.6em;
+      font-family: $font-secondary;
       &::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: $color-secondary-transparent;
         font-size: 1.5rem;
+        font-family: $font-secondary;
       }
       &:focus {
         outline: none;
@@ -73,6 +84,9 @@
 @media (max-width: 550px) {
   #Contact .contact-container {
     width: 100vw;
+    .contact-heading {
+      font-size: 1.4rem;
+    }
     .contact-form {
       width: 100%;
       input,

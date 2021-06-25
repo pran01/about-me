@@ -22,6 +22,7 @@ const Contact = () => {
   return (
     <section id="Contact">
       <div className="contact-container">
+        <p className="contact-heading">Get in touch</p>
         <form className="contact-form" onSubmit={sendEmail}>
           <input
             type="text"
