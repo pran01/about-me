@@ -1,0 +1,75 @@
+@import "./variables";
+
+.project-card-container {
+  height: 15rem;
+  width: 25rem;
+  .project-card-main {
+    position: relative;
+    width: 100%;
+    .project-card-image {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .project-card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $color-secondary-semi-transparent;
+      color: $color-neutral;
+      font-size: 1.3rem;
+      font-family: $font-secondary;
+      font-weight: 500;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      padding-inline: 1em;
+      & > a {
+        text-decoration: none;
+        color: $color-neutral;
+        display: inline-flex;
+        margin-inline: 2rem;
+      }
+      .project-card-link {
+        display: flex;
+        border: 1px solid $color-neutral;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        border-radius: 500px;
+        padding: 0.1em;
+        .project-card-link-logo {
+          display: block;
+        }
+        .project-card-link-name {
+          display: none;
+        }
+        &:hover {
+          padding-inline: 0.5em;
+          .project-card-link-logo {
+            display: none;
+          }
+          .project-card-link-name {
+            display: block;
+          }
+        }
+      }
+    }
+    &:hover {
+      .project-card-overlay {
+        opacity: 1;
+      }
+    }
+  }
+  .project-card-name {
+    width: 100%;
+    text-align: center;
+    color: $color-secondary;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    font-weight: 700;
+  }
+}
