@@ -3,6 +3,8 @@ import "../styles/Projects.scss";
 import ProjectCard from "./ProjectCard";
 
 import AlgoVision from "../assets/images/Algovision.png";
+import MnistVision from "../assets/images/MnistVision.png";
+import FamilyApp from "../assets/images/FamilyApp.png";
 
 const Projects = () => {
   const ProjectsData = [
@@ -11,40 +13,24 @@ const Projects = () => {
       image: AlgoVision,
       about:
         "An algorithm visualiser made with vanilla javascript having interesting themes",
-      github: "",
+      github: "https://github.com/pran01/AlgoVision",
+      live: "http://algovision.herokuapp.com/",
+    },
+    {
+      name: "MnistVision",
+      image: MnistVision,
+      about:
+        "Handwritten digit recognition on webcam with OpenCV and Tensorflow.",
+      github: "https://github.com/pran01/MnistVision",
       live: "",
     },
     {
-      name: "AlgoVision",
-      image: AlgoVision,
+      name: "FamilyApp",
+      image: FamilyApp,
       about:
-        "An algorithm visualiser made with vanilla javascript having interesting themes",
-      github: "",
-      live: "",
-    },
-    {
-      name: "AlgoVision",
-      image: AlgoVision,
-      about:
-        "An algorithm visualiser made with vanilla javascript having interesting themes",
-      github: "",
-      live: "",
-    },
-    {
-      name: "AlgoVision",
-      image: AlgoVision,
-      about:
-        "An algorithm visualiser made with vanilla javascript having interesting themes",
-      github: "",
-      live: "",
-    },
-    {
-      name: "AlgoVision",
-      image: AlgoVision,
-      about:
-        "An algorithm visualiser made with vanilla javascript having interesting themes",
-      github: "",
-      live: "",
+        "A responsive web app personalised for and only accessible to my family.(Only my family members are registered, so no point in opening hosted link)",
+      github: "https://github.com/pran01/Familyapp",
+      live: "https://familyapp1.herokuapp.com/",
     },
   ];
   return (

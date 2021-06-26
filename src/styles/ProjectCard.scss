@@ -6,6 +6,7 @@
   .project-card-main {
     position: relative;
     width: 100%;
+    z-index: 0;
     .project-card-image {
       display: block;
       max-width: 100%;
@@ -19,7 +20,7 @@
       height: 100%;
       background: $color-secondary-semi-transparent;
       color: $color-neutral;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-family: $font-secondary;
       font-weight: 500;
       text-align: center;
@@ -71,5 +72,25 @@
     font-size: 1.2rem;
     font-family: $font-primary;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-card-container {
+    height: 10rem;
+    width: 20rem;
+    .project-card-main .project-card-overlay {
+      font-size: 1rem;
+    }
+    &:hover {
+      .project-card-overlay {
+        opacity: 0;
+      }
+    }
+    &:focus {
+      .project-card-overlay {
+        opacity: 1;
+      }
+    }
   }
 }

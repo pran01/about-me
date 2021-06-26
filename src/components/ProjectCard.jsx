@@ -9,19 +9,26 @@ const ProjectCard = ({ name, image, about, github, live }) => {
         <img src={image} alt={name} className="project-card-image" />
         <div className="project-card-overlay">
           <p>{about}</p>
-
-          <a href="#Home">
-            <div className="project-card-link">
-              <FaGithub className="project-card-link-logo" />
-              <span className="project-card-link-name">Github</span>
-            </div>
-          </a>
-          <a href="#Home">
-            <div className="project-card-link">
-              <FaChrome className="project-card-link-logo" />
-              <span className="project-card-link-name">Live</span>
-            </div>
-          </a>
+          {github ? (
+            <a href={github} target="_blank" rel="noreferrer">
+              <div className="project-card-link">
+                <FaGithub className="project-card-link-logo" />
+                <span className="project-card-link-name">Github</span>
+              </div>
+            </a>
+          ) : (
+            <></>
+          )}
+          {live ? (
+            <a href={live} target="_blank" rel="noreferrer">
+              <div className="project-card-link">
+                <FaChrome className="project-card-link-logo" />
+                <span className="project-card-link-name">Live</span>
+              </div>
+            </a>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
       <div className="project-card-name">{name}</div>
