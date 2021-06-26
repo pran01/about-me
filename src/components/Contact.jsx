@@ -90,10 +90,6 @@ const Contact = () => {
 
             <span>Send</span>
           </button>
-          {/*
-          TODO: 
-          Animation for send button
-          */}
         </form>
         <div className="profile-links">
           <a

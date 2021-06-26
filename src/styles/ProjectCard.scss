@@ -77,8 +77,8 @@
 
 @media (max-width: 500px) {
   .project-card-container {
-    height: 10rem;
-    width: 20rem;
+    height: auto;
+    width: 50%;
     .project-card-main .project-card-overlay {
       font-size: 1rem;
       .project-card-link {
