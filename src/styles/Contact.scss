@@ -46,7 +46,7 @@
         outline: none;
       }
     }
-    .message {
+    .sender-message {
       height: 300px;
       padding-top: 1em;
     }
@@ -61,6 +61,28 @@
       color: $color-secondary;
       font-size: 1.5rem;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease 0.5s;
+      & > span {
+        margin-inline: 0.2em;
+      }
+      &.active {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $color-primary;
+        border-left-color: transparent;
+        border-radius: 500px;
+        background: transparent;
+        animation: rotate 1.4s ease 0.5s infinite;
+        & > span {
+          display: none;
+        }
+        & .send-icon {
+          display: none;
+        }
+      }
     }
   }
   .profile-links {
@@ -78,6 +100,18 @@
     .logo:hover {
       color: $color-primary;
     }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-rotate {
+  0% {
+    transform: rotate(-360deg);
   }
 }
 
