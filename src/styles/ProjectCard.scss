@@ -78,7 +78,7 @@
 @media (max-width: 500px) {
   .project-card-container {
     height: auto;
-    width: 50%;
+    width: 70%;
     .project-card-main .project-card-overlay {
       font-size: 1rem;
       .project-card-link {
@@ -103,5 +103,11 @@
         opacity: 1;
       }
     }
+  }
+}
+
+@media (max-width: 300px) {
+  .project-card-container {
+    width: 50%;
   }
 }
