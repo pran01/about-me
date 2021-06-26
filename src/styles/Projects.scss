@@ -41,7 +41,7 @@
   .display-projects {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, MINMAX(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, MINMAX(25rem, 1fr));
     row-gap: 4rem;
   }
 }

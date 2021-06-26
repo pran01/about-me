@@ -26,7 +26,7 @@
       text-align: center;
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
-      padding-inline: 1em;
+      padding-inline: 0.5em;
       & > a {
         text-decoration: none;
         color: $color-neutral;
@@ -81,6 +81,17 @@
     width: 20rem;
     .project-card-main .project-card-overlay {
       font-size: 1rem;
+      .project-card-link {
+        padding-inline: 0.3em;
+        .project-card-link-logo {
+          display: block;
+          margin-inline: 0.3em;
+        }
+        .project-card-link-name {
+          display: block;
+          margin-inline: 0.1em;
+        }
+      }
     }
     &:hover {
       .project-card-overlay {
