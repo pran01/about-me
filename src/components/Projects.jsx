@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import AlgoVision from "../assets/images/Algovision.png";
 import MnistVision from "../assets/images/MnistVision.png";
 import FamilyApp from "../assets/images/FamilyApp.png";
+import Portfolio from "../assets/images/Portfolio.png";
 
 const Projects = () => {
   const ProjectsData = [
@@ -31,6 +32,13 @@ const Projects = () => {
         "A responsive web app personalised for and only accessible to my family.(Only my family members are registered, so no point in opening hosted link)",
       github: "https://github.com/pran01/Familyapp",
       live: "https://familyapp1.herokuapp.com/",
+    },
+    {
+      name: "Portfolio",
+      image: Portfolio,
+      about: "This website that you are currently using",
+      github: "https://github.com/pran01/about-me",
+      live: "",
     },
   ];
   return (

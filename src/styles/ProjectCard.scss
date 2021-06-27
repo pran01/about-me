@@ -7,6 +7,8 @@
     position: relative;
     width: 100%;
     z-index: 0;
+    border: 1px solid $color-primary;
+    box-shadow: 0px 0px 10px 5px $color-primary-transparent;
     .project-card-image {
       display: block;
       max-width: 100%;
