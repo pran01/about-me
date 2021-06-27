@@ -59,3 +59,17 @@
     }
   }
 }
+
+@media (max-width: 310px) {
+  #Projects .projects-container {
+    margin-left: 2vw;
+    .projects-heading {
+      font-size: 1.2rem;
+    }
+    .projects-button {
+      height: 1.3rem;
+      width: 4.8rem;
+      font-size: 0.6rem;
+    }
+  }
+}

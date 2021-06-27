@@ -80,7 +80,7 @@
     height: auto;
     width: 70%;
     .project-card-main .project-card-overlay {
-      font-size: 1rem;
+      font-size: 0.8rem;
       .project-card-link {
         padding-inline: 0.3em;
         .project-card-link-logo {
@@ -106,8 +106,11 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
   .project-card-container {
     width: 50%;
+    .project-card-main .project-card-overlay {
+      font-size: 0.6rem;
+    }
   }
 }
