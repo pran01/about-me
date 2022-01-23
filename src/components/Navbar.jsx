@@ -1,6 +1,6 @@
 import "../styles/navbar.scss";
 import logo from "../assets/images/PS-Logo-Black.png";
-import resume from "../assets/docs/Resume-November2020.pdf";
+import resume from "../assets/docs/ResumeJanuary2022.pdf";
 
 const Navbar = () => {
   const toggleNavbar = () => {
