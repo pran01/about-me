@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.7e52176e.chunk.css",
-    "main.js": "/about-me/static/js/main.0156e322.chunk.js",
-    "main.js.map": "/about-me/static/js/main.0156e322.chunk.js.map",
+    "main.css": "/about-me/static/css/main.19e969c3.chunk.css",
+    "main.js": "/about-me/static/js/main.7b12a72a.chunk.js",
+    "main.js.map": "/about-me/static/js/main.7b12a72a.chunk.js.map",
     "runtime-main.js": "/about-me/static/js/runtime-main.4b8221bd.js",
     "runtime-main.js.map": "/about-me/static/js/runtime-main.4b8221bd.js.map",
-    "static/js/2.f8c1c0b8.chunk.js": "/about-me/static/js/2.f8c1c0b8.chunk.js",
-    "static/js/2.f8c1c0b8.chunk.js.map": "/about-me/static/js/2.f8c1c0b8.chunk.js.map",
+    "static/js/2.402b9474.chunk.js": "/about-me/static/js/2.402b9474.chunk.js",
+    "static/js/2.402b9474.chunk.js.map": "/about-me/static/js/2.402b9474.chunk.js.map",
     "static/js/3.2c0914f8.chunk.js": "/about-me/static/js/3.2c0914f8.chunk.js",
     "static/js/3.2c0914f8.chunk.js.map": "/about-me/static/js/3.2c0914f8.chunk.js.map",
     "index.html": "/about-me/index.html",
-    "static/css/main.7e52176e.chunk.css.map": "/about-me/static/css/main.7e52176e.chunk.css.map",
-    "static/js/2.f8c1c0b8.chunk.js.LICENSE.txt": "/about-me/static/js/2.f8c1c0b8.chunk.js.LICENSE.txt",
+    "static/css/main.19e969c3.chunk.css.map": "/about-me/static/css/main.19e969c3.chunk.css.map",
+    "static/js/2.402b9474.chunk.js.LICENSE.txt": "/about-me/static/js/2.402b9474.chunk.js.LICENSE.txt",
     "static/media/Algovision.a6cb3762.png": "/about-me/static/media/Algovision.a6cb3762.png",
     "static/media/C++.c0a0d2fd.png": "/about-me/static/media/C++.c0a0d2fd.png",
     "static/media/CSS.21daf8d8.png": "/about-me/static/media/CSS.21daf8d8.png",
@@ -23,14 +23,14 @@
     "static/media/Portfolio.2d46dd7c.png": "/about-me/static/media/Portfolio.2d46dd7c.png",
     "static/media/React.73ac128a.png": "/about-me/static/media/React.73ac128a.png",
     "static/media/ReactNative.83836a67.png": "/about-me/static/media/ReactNative.83836a67.png",
-    "static/media/Resume-November2020.aa993d5d.pdf": "/about-me/static/media/Resume-November2020.aa993d5d.pdf",
+    "static/media/ResumeJanuary2022.9718d07e.pdf": "/about-me/static/media/ResumeJanuary2022.9718d07e.pdf",
     "static/media/SQLite.a6f982dd.png": "/about-me/static/media/SQLite.a6f982dd.png",
     "static/media/sass.7cdbf6b5.png": "/about-me/static/media/sass.7cdbf6b5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4b8221bd.js",
-    "static/js/2.f8c1c0b8.chunk.js",
-    "static/css/main.7e52176e.chunk.css",
-    "static/js/main.0156e322.chunk.js"
+    "static/js/2.402b9474.chunk.js",
+    "static/css/main.19e969c3.chunk.css",
+    "static/js/main.7b12a72a.chunk.js"
   ]
 }
