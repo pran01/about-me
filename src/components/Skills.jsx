@@ -6,6 +6,7 @@ import Flask from "../assets/icons/Flask.png";
 import Git from "../assets/icons/Git.png";
 import HTML from "../assets/icons/HTML.png";
 import JS from "../assets/icons/JS.png";
+import Java from "../assets/icons/java.png";
 import Python from "../assets/icons/Python.png";
 import ReactLogo from "../assets/icons/React.png";
 import ReactNative from "../assets/icons/ReactNative.png";
@@ -13,7 +14,7 @@ import Sass from "../assets/icons/sass.png";
 import SQLite from "../assets/icons/SQLite.png";
 
 const Skills = () => {
-  const languages = [HTML, CSS, JS, Python, Cpp];
+  const languages = [HTML, CSS, JS, Python, Cpp, Java];
   const libraries = [Flask, ReactLogo, ReactNative, SQLite, Sass, Git];
   return (
     <section id="Skills">
